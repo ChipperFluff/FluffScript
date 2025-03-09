@@ -1,7 +1,10 @@
-from sys import argv
+from src.cli_interface import CliParser
 
 def main():
-    print(argv[1])
+    cli = CliParser()
+    args = cli.parse_args()
+    print(args)
 
 if __name__ == '__main__':
     main()
+    
